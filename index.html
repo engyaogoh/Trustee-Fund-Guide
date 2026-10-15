@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Floor First — Government Support &amp; Trustee Fund Guide (SG)</title>
+<meta name="description" content="Maximise Singapore government help for a person with disability: GOAL+ match, Community Chest, MRSS, ADAP, SNSS, ComCare — then SA top-ups and an S&amp;P 500 sleeve under will and trustee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F7F6;          /* cool paper */
+    --ink:#14231C;         /* deep green-black */
+    --ink-soft:#4A5A52;
+    --green:#0E7A4F;       /* guaranteed money */
+    --green-dark:#0A5738;
+    --gold:#B98A15;        /* growth tier */
+    --line:#D8DEDB;
+    --card:#FFFFFF;
+    --red:#C42127;         /* gov accent, used once */
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.12;margin:0}
+  a{color:var(--green-dark)}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-soft);
+  }
+  .eyebrow .sg{color:var(--red)}
+
+  /* ---------- hero: the stack ---------- */
+  header{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  h1{font-size:clamp(38px,5vw,58px);font-weight:700;letter-spacing:-.015em}
+  h1 em{font-style:normal;color:var(--green)}
+  .lede{margin:20px 0 0;font-size:19px;color:var(--ink-soft);max-width:52ch}
+  .stack{display:flex;flex-direction:column;gap:6px}
+  .layer{
+    border:1px solid var(--ink);padding:14px 18px;background:var(--card);
+    display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  }
+  .layer b{font-family:"Fraunces",serif;font-size:17px}
+  .layer span{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+  .layer.l3{border-top:3px solid var(--gold)}
+  .layer.l2{border-top:3px solid var(--green);background:#F2F9F5}
+  .layer.l1{border-top:3px solid var(--ink);background:var(--ink);color:#F2F7F4}
+  .layer.l1 span{color:#9DBBA9}
+  .stack-cap{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px;text-align:right}
+
+  /* ---------- sections ---------- */
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+  h2{font-size:clamp(26px,3vw,34px);font-weight:700}
+  .tag{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    padding:4px 10px;border:1px solid currentColor;
+  }
+  .tag.floor{color:var(--green-dark)}
+  .tag.grow{color:var(--gold)}
+  .sec-head + p{color:var(--ink-soft);max-width:70ch;margin-top:4px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;margin-top:28px}
+  .card{
+    background:var(--card);border:1px solid var(--line);padding:22px;
+    display:flex;flex-direction:column;gap:10px;position:relative;
+  }
+  .card .amt{
+    font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:14px;
+    color:#fff;background:var(--green);align-self:flex-start;padding:3px 9px;
+  }
+  .card.grow .amt{background:var(--gold)}
+  .card h3{font-size:21px;font-weight:700}
+  .card p{margin:0;font-size:15.5px;color:var(--ink-soft)}
+  .card .who{font-size:13.5px}
+  .card .who b{color:var(--ink)}
+  .card a.src{
+    margin-top:auto;font-family:"IBM Plex Mono",monospace;font-size:12.5px;
+    text-decoration:none;border-top:1px dashed var(--line);padding-top:10px;
+  }
+  .card a.src:hover{text-decoration:underline}
+
+  /* ---------- steps ---------- */
+  .steps{list-style:none;margin:28px 0 0;padding:0;counter-reset:s;display:grid;gap:14px}
+  .steps li{
+    counter-increment:s;background:var(--card);border:1px solid var(--line);
+    padding:16px 20px 16px 64px;position:relative;font-size:16px;
+  }
+  .steps li::before{
+    content:counter(s,decimal-leading-zero);position:absolute;left:18px;top:14px;
+    font-family:"IBM Plex Mono",monospace;font-size:20px;color:var(--green);font-weight:500;
+  }
+  .steps li b{font-family:"Fraunces",serif;font-size:17px}
+
+  .note{
+    margin-top:26px;border-left:4px solid var(--gold);background:#FBF7EC;
+    padding:16px 20px;font-size:15.5px;color:#5A4711;
+  }
+  footer{padding:40px 0 64px;font-size:14px;color:var(--ink-soft)}
+  footer .contact{font-family:"IBM Plex Mono",monospace;font-size:13px;margin-top:6px}
+  @media(max-width:760px){.hero{grid-template-columns:1fr;gap:32px}.stack-cap{text-align:left}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  a:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow"><span class="sg">SG</span> · Financial plan for a person with disability</p>
+      <h1>The <em>guaranteed floor</em> first. Growth on top.</h1>
+      <p class="lede">Stack every dollar-for-dollar government grant before risking a cent in markets — then add a CPF safety leg and an S&amp;P&nbsp;500 sleeve that passes to him through the will and the trustee.</p>
+    </div>
+    <div>
+      <div class="stack" aria-hidden="true">
+        <div class="layer l3"><b>S&amp;P 500 sleeve</b><span>growth · will → trustee</span></div>
+        <div class="layer l2"><b>CPF Special Account top-ups</b><span>safety · matched</span></div>
+        <div class="layer l1"><b>Government grants</b><span>floor · 100% match</span></div>
+      </div>
+      <p class="stack-cap">bottom up: claim the floor → safety → growth</p>
+    </div>
+  </div>
+</header>
+
+<section id="floor">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The floor: maximise government help</h2>
+      <span class="tag floor">Claim in full</span>
+    </div>
+    <p>Free, matched money — in rough order of size. Autism is an explicitly accepted disability under GOAL+; all of these need the Disability Verification Form (DVF) from a registered healthcare professional.</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="amt">Up to $10,000 matched</span>
+        <h3>GOAL+ dollar-for-dollar top-up</h3>
+        <p>The Government matches your contributions into his Special Needs Trust account <b>dollar-for-dollar, up to $10,000</b>, across a 5-year window. Runs 1 Apr 2026 – 31 Mar 2031. SNTC setup fees are separately 90–100% subsidised by MSF.</p>
+        <p class="who"><b>Who:</b> SC/PR with permanent disability (autism qualifies); per capita household income ≤ $3,600 (or annual value of property ≤ $21,000 if PCHI is $0).</p>
+        <a class="src" href="https://www.sgenable.sg/your-first-stop/disability-support/special-needs-trust/services/goalplus" target="_blank" rel="noopener">sgenable.sg → GOAL+ (apply)</a>
+      </div>
+
+      <div class="card">
+        <span class="amt">$5,000 setup covered</span>
+        <h3>Community Chest seed</h3>
+        <p>If he has no trust account yet, Community Chest sponsors the full <b>$5,000 initial deposit</b> needed to open the Special Needs Trust account, on top of the GOAL+ match.</p>
+        <p class="who"><b>Who:</b> families joining GOAL+ without an existing SNT account.</p>
+        <a class="src" href="https://www.sgenable.sg/your-first-stop/disability-support/special-needs-trust/services/special-needs-trust" target="_blank" rel="noopener">sgenable.sg → Special Needs Trust</a>
+      </div>
+
+      <div class="card">
+        <span class="amt">$2,000/yr matched · $20,000 life</span>
+        <h3>MRSS — CPF top-up match</h3>
+        <p>The Government matches cash top-ups to his CPF Special Account <b>dollar-for-dollar, up to $2,000 a year</b>, lifetime cap $20,000. From 1 Jan 2026 this is open to persons with disabilities <b>of all ages</b> — no need to wait for 55.</p>
+        <p class="who"><b>Who:</b> SC/PR with verified disability, below 55 → top up SA; 55+ → top up RA. Anyone (family, employer) can top up.</p>
+        <a class="src" href="https://www.cpf.gov.sg/mrss" target="_blank" rel="noopener">cpf.gov.sg → MRSS</a>
+      </div>
+
+      <div class="card">
+        <span class="amt">Subsidised court filing</span>
+        <h3>ADAP — assisted deputyship</h3>
+        <p>If he lacks mental capacity, someone must be his legal <b>deputy</b> to hold accounts and investments for him. ADAP makes the Family Court application simpler and cheaper, with a guided filing through MINDS and a Mental Capacity Assessment (valid 3 years) at no cost.</p>
+        <p class="who"><b>Who:</b> child aged 18–21 graduating from a SPED school, or enrolled in an MSF-funded Day Activity Centre / Sheltered Workshop; uncontested cases.</p>
+        <a class="src" href="https://www.enablingguide.sg/im-looking-for-disability-support/child-adult-care/assisted-deputyship-application-programme-(adap)" target="_blank" rel="noopener">enablingguide.sg → ADAP</a>
+      </div>
+
+      <div class="card">
+        <span class="amt">CPF → monthly payouts</span>
+        <h3>SNSS — Special Needs Savings Scheme</h3>
+        <p>His parents nominate their CPF monies to him; after they pass, SNTC disburses it to him as <b>monthly payouts</b> at an amount the parents pre-set, until the savings run out. This is the parents' side of the same trust — set it up alongside the SNT.</p>
+        <p class="who"><b>Who:</b> parents of a child with special needs making a CPF nomination.</p>
+        <a class="src" href="https://www.sgenable.sg/your-first-stop/disability-support/special-needs-trust/services/special-needs-savings-scheme" target="_blank" rel="noopener">sgenable.sg → SNSS</a>
+      </div>
+
+      <div class="card">
+        <span class="amt">Monthly income support</span>
+        <h3>ComCare</h3>
+        <p>If household income is low, MSF's ComCare provides ongoing help: <b>Short-to-Medium Term Assistance</b> (income ≤ $1,900/mo or ≤ $650 per capita) and <b>Long Term Assistance</b> for those permanently unable to work. Applied for at the nearest Social Service Office.</p>
+        <p class="who"><b>Who:</b> low-income households with a member who cannot work or needs care.</p>
+        <a class="src" href="https://www.msf.gov.sg/what-we-do/comcare" target="_blank" rel="noopener">msf.gov.sg → ComCare</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="growth">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Good to have: safety leg + growth leg</h2>
+      <span class="tag grow">Build after the floor</span>
+    </div>
+    <p>Once every matched dollar is claimed, these two layers do the compounding.</p>
+
+    <div class="grid">
+      <div class="card grow">
+        <span class="amt">Safety leg</span>
+        <h3>Top up the SA account beyond the match</h3>
+        <p>CPF Special Account earns a government-guaranteed <b>4% p.a. — the risk-free floor of the whole plan</b>. Top up above the MRSS-matched $2,000/year (extra top-ups just earn the interest, un-matched), and the money stays withdrawable for retirement payouts via his own CPF. Cash here is never at market risk.</p>
+        <p class="who"><b>Rule of thumb:</b> floor first (GOAL+ + MRSS matched amounts), then extra SA, then markets.</p>
+        <a class="src" href="https://www.cpf.gov.sg/member/infohub/educational-resources/matched-retirement-savings-scheme-what-you-need-to-know" target="_blank" rel="noopener">cpf.gov.sg → MRSS details</a>
+      </div>
+
+      <div class="card grow">
+        <span class="amt">Growth leg</span>
+        <h3>S&amp;P 500 under will → trustee</h3>
+        <p>Build the equity sleeve <b>while the parents are living</b> — an S&amp;P 500 index ETF (Ireland-domiciled, e.g. CSPX/VUAA class, via Endowus or IBKR to avoid US estate-tax exposure) DCA'd monthly in his own account, or held by his deputy if he lacks capacity. On the parents' passing, the <b>will routes cash and accounts into the trustee</b>, and the Letter of Intent controls how it is disbursed to him — monthly, for life.</p>
+        <p class="who"><b>Structure:</b> the will feeds the trust; the trust (SNTC) holds the safe money with government-guaranteed principal; the equity sleeve stays in the investment account the trustee or deputy controls.</p>
+        <a class="src" href="https://supportgowhere.life.gov.sg/schemes/cllsZZkD/special-needs-trust" target="_blank" rel="noopener">supportgowhere.life.gov.sg → Special Needs Trust</a>
+      </div>
+    </div>
+
+    <div class="note"><b>Honest caveat on the S&amp;P inside the trust:</b> funds held by the Special Needs Trust are invested by the Public Trustee with <b>principal guaranteed by the Government</b> — safe, but not equities. To keep S&amp;P 500 exposure for him, the index sleeve must live in the brokerage account (his own, or his deputy's), with the will simply bequeathing it to the trust or naming the trust as beneficiary.</div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Order of action</h2>
+      <span class="tag floor">Do it in this sequence</span>
+    </div>
+    <ol class="steps">
+      <li><b>Verify the disability (DVF).</b> A registered healthcare professional completes the Disability Verification Form through SG Enable — this unlocks GOAL+, MRSS and every scheme below. Check existing status on SupportGoWhere with Singpass.</li>
+      <li><b>Settle mental capacity.</b> Doctor or psychologist assesses: has capacity → LPA form at 21. Lacks capacity → deputyship, via ADAP if eligible (18–21 SPED / DAC / SW) or the standard Family Court process with Legal Aid Bureau / Community Justice Centre.</li>
+      <li><b>Open the Special Needs Trust, collect GOAL+.</b> $5,000 initial deposit (Community Chest sponsors it), then top up within the 5-year window for the dollar-for-dollar match up to $10,000.</li>
+      <li><b>Top up CPF SA every year, collect MRSS.</b> $2,000/year in, $2,000/year matched; extra top-ups above that still earn 4%.</li>
+      <li><b>Start the S&amp;P 500 sleeve and write the will.</b> Monthly DCA into an Ireland-domiciled index ETF; the will names the trust so everything passes to the trustee on the parents' passing. Add SNSS (CPF nomination) the same day.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Guide compiled Oct 2026 from official Singapore government sources. Schemes change — always confirm on the linked page before applying. This is a research summary, not financial or legal advice.</p>
+    <p class="contact">SG Enable Future Care Planning · futurecareplanning@sgenable.sg · 6278 9598 (weekdays 9am–6pm)</p>
+  </div>
+</footer>
+
+</body>
+</html>
